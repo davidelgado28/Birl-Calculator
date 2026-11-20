@@ -1,0 +1,43 @@
+HORA DO SHOW
+    TRAPEZIO NUM1, NUM2, RESULTADO;
+    MONSTRO OPCAO;
+
+    CE QUER VER ESSA PORRA? ("=== CALCULADORA MONSTRA ===\n");
+    CE QUER VER ESSA PORRA? ("1 - SOMA\n2 - SUBTRACAO\n3 - MULTIPLICACAO\n4 - DIVISAO\n");
+    CE QUER VER ESSA PORRA? ("ESCOLHE O TREINO (1 a 4): ");
+    QUE QUE CE QUER MONSTRAO? ("%d", &OPCAO);
+
+    CE QUER VER ESSA PORRA? ("DIGITE O PRIMEIRO PESO: ");
+    QUE QUE CE QUER MONSTRAO? ("%f", &NUM1);
+
+    CE QUER VER ESSA PORRA? ("DIGITE O SEGUNDO PESO: ");
+    QUE QUE CE QUER MONSTRAO? ("%f", &NUM2);
+
+    ELE QUE A GENTE QUER? (OPCAO == 1)
+        RESULTADO = NUM1 + NUM2;
+        CE QUER VER ESSA PORRA? ("RESULTADO: %.2f\n", RESULTADO);
+    NAO VAI DAR NAO
+        ELE QUE A GENTE QUER? (OPCAO == 2)
+            RESULTADO = NUM1 - NUM2;
+            CE QUER VER ESSA PORRA? ("RESULTADO: %.2f\n", RESULTADO);
+        NAO VAI DAR NAO
+            ELE QUE A GENTE QUER? (OPCAO == 3)
+                RESULTADO = NUM1 * NUM2;
+                CE QUER VER ESSA PORRA? ("RESULTADO: %.2f\n", RESULTADO);
+            NAO VAI DAR NAO
+                ELE QUE A GENTE QUER? (OPCAO == 4)
+                    ELE QUE A GENTE QUER? (NUM2 != 0)
+                        RESULTADO = NUM1 / NUM2;
+                        CE QUER VER ESSA PORRA? ("RESULTADO: %.2f\n", RESULTADO);
+                    NAO VAI DAR NAO
+                        CE QUER VER ESSA PORRA? ("NAO DA PRA DIVIDIR POR ZERO, FRANGO!\n");
+                    BIRL
+                NAO VAI DAR NAO
+                    CE QUER VER ESSA PORRA? ("OPCAO INVALIDA! SAI DA JAULA!\n");
+                BIRL
+            BIRL
+        BIRL
+    BIRL
+
+    BORA CUMPADE 0;
+BIRL
